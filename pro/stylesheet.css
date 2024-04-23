@@ -1,0 +1,157 @@
+/* Stolen from https://www.w3schools.com/howto/howto_css_responsive_header.asp like a sigma */
+.header {
+	overflow: hidden;
+	background-color: #2e2e2e;
+	padding: 20px 10px;
+	border-radius: 25px;
+  }
+  
+  /* Style the header links */
+  .header a {
+	float: left;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+	background-color: #66ff663a;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+	background-color: #66ff66;
+	color: rgb(0, 0, 0);
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+	float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+	.header a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.header-right {
+	  float: none;
+	}
+  }
+
+/* Fonts */
+.jersey25 {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Colors */
+/* Colors from from https://www.w3schools.com/colors/colors_picker.asp */
+#pro {
+	color: #ffff66;
+}
+#green {
+	color: #66ff66;
+}
+
+/* Site content */
+.site-content {
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+	background-color: #3d3d3d;
+	color: #fff;
+}
+
+/* responsive grid stolen from https://codepen.io/julesforrest/pen/QBzaQR */
+.container-cds {
+	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+	grid-gap: 2rem;
+	margin: 2rem;
+	display: grid;
+  }
+  
+  /* demo purposes only */
+  
+
+  .card {
+	height: 215px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+  .card-h3 {
+	color: white;
+	font-size: 24px;
+	margin: 20px 0 0 20px;
+  
+  }
+  
+  .card-p {
+	color: white;
+	font-weight: 400;
+	font-size: 16px;
+	align-self: end;
+	margin: 0 0 20px 20px;
+	letter-spacing: 0.5px;
+  }
+  
+  .card-img {
+	position: absolute;
+	top: 0;
+	height: 110%;
+	width: 100%;
+	z-index: -1;
+	transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+
+  
+  .card:hover {
+	transform: scale(1.035, 1.035);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card:hover .card-img {
+	transform: translateY(-10px);
+  }
+  
+  .unstyle {
+    all: unset;
+}
