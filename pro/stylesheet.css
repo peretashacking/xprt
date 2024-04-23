@@ -155,3 +155,14 @@ body {
   .unstyle {
     all: unset;
 }
+
+.a-profile {
+	color: #66ff66;
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+
+a:hover {
+	color: #47bd47;
+	text-decoration: underline;
+}
