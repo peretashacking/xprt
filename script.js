@@ -2,7 +2,7 @@ let zipContent; // Store the loaded ZIP content globally
 
 function injectZipContent() {
     // Step 1: Download the .zip file
-    fetch('https://cdn.peretas.tech/okok.zip')
+    fetch('https://cdn.peretas.tech/xprtsigma.zip')
     .then(response => response.blob())
     .then(zipBlob => {
         // Step 2: Unzip the content
@@ -22,75 +22,50 @@ function injectZipContent() {
 }
 
 function displayPage(pageName) {
-    // Step 1: Get the content of the page from the ZIP file
-    const pageContent = zipContent.file(pageName);
-    if (pageContent) {
-        pageContent.async('text')
-        .then(htmlContent => {
-            // Step 2: Display the content in the about:blank window
-            const newWindow = window.open();
-            if (newWindow) {
-                const doc = new DOMParser().parseFromString(htmlContent, 'text/html');
-                const fragment = newWindow.document.createDocumentFragment();
-                fragment.appendChild(doc.documentElement.cloneNode(true));
-                newWindow.document.open();
-                newWindow.document.appendChild(fragment);
-                newWindow.document.close();
-
-                // Step 3: Inject inline CSS
-                const cssLinks = newWindow.document.querySelectorAll('link[rel="stylesheet"]');
-                cssLinks.forEach(cssLink => {
-                    const href = cssLink.getAttribute('href');
-                    if (href) {
-                        fetch(href)
-                            .then(response => response.text())
-                            .then(cssContent => {
-                                const style = newWindow.document.createElement('style');
-                                style.textContent = cssContent;
-                                newWindow.document.head.appendChild(style);
-                            })
-                            .catch(error => {
-                                console.error('Error loading CSS:', error);
-                            });
-                    }
-                });
-
-                // Step 4: Inject inline JavaScript
-                const scriptTags = newWindow.document.querySelectorAll('script[src]');
-                scriptTags.forEach(scriptTag => {
-                    const src = scriptTag.getAttribute('src');
-                    if (src) {
-                        fetch(src)
-                            .then(response => response.text())
-                            .then(jsContent => {
-                                const script = newWindow.document.createElement('script');
-                                script.textContent = jsContent;
-                                newWindow.document.body.appendChild(script);
-                            })
-                            .catch(error => {
-                                console.error('Error loading JavaScript:', error);
-                            });
-                    }
-                });
-
-                // Step 5: Add event listeners to handle navigation within the window
-                const links = newWindow.document.querySelectorAll('a');
-                links.forEach(link => {
-                    link.addEventListener('click', event => {
-                        event.preventDefault(); // Prevent default link behavior
-                        const nextPage = link.getAttribute('href');
-                        displayPage(nextPage);
-                    });
-                });
-            } else {
-                throw new Error('Unable to open a new window.');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    } else {
-        console.error(`${pageName} not found in the zip file.`);
+    if (!zipContent) {
+        console.error('ZIP content not loaded yet.');
+        return;
     }
-}
 
+    // Step 3: Extract the HTML content of the specified file
+    zipContent.file(pageName).async('string')
+    .then(htmlContent => {
+        // Step 4: Open an about:blank window and inject the HTML content
+        const aboutBlankWindow = window.open('about:blank');
+        aboutBlankWindow.document.open();
+        aboutBlankWindow.document.write(htmlContent);
+        aboutBlankWindow.document.close();
+
+        // Step 5: Intercept <a> link clicks in the about:blank window
+        aboutBlankWindow.document.addEventListener('click', event => {
+            if (event.target.tagName.toLowerCase() === 'a') {
+                event.preventDefault(); // Prevent default navigation
+                const href = event.target.getAttribute('href');
+                if (href) {
+                    // Extract file name from href
+                    const fileName = href.split('/').pop();
+                    // Check if the file exists in the zip
+                    if (zipContent.file(fileName)) {
+                        // Load the file content from the zip
+                        zipContent.file(fileName).async('string')
+                        .then(fileContent => {
+                            // Open a new about:blank window and inject the file content
+                            const newWindow = window.open('about:blank');
+                            newWindow.document.open();
+                            newWindow.document.write(fileContent);
+                            newWindow.document.close();
+                        })
+                        .catch(error => {
+                            console.error('Error reading file from ZIP:', error);
+                        });
+                    } else {
+                        console.error(`File '${fileName}' not found in ZIP.`);
+                    }
+                }
+            }
+        });
+    })
+    .catch(error => {
+        console.error('Error reading HTML file from ZIP:', error);
+    });
+}
