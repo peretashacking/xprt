@@ -1,7 +1,7 @@
 /* Stolen from https://www.w3schools.com/howto/howto_css_responsive_header.asp like a sigma */
 .header {
 	overflow: hidden;
-	background-color: #2e2e2e;
+	background-color: #dbdbdb;
 	padding: 20px 10px;
 	border-radius: 25px;
   }
@@ -9,7 +9,7 @@
   /* Style the header links */
   .header a {
 	float: left;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	text-align: center;
 	padding: 12px;
 	text-decoration: none;
@@ -19,7 +19,7 @@
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	margin-left:4px;
+    margin-left:4px;
     margin-right:4px;
   }
   
@@ -31,15 +31,21 @@
   
   /* Change the background color on mouse-over */
   .header a:hover {
-	background-color: #66ff663a;
+	background-color: rgba(76, 0, 92, 0.2);
+    color: white;
+    text-decoration: underline;
   }
   
   /* Style the active/current link*/
   .header a.active {
-	background-color: #66ff66;
-	color: rgb(0, 0, 0);
+	background-color: #cc00ff;
+	color: rgb(255, 255, 255);
   }
   
+  .header a.active:hover {
+    background-color: rgba(76, 0, 92, 0.2);
+    text-decoration: underline;
+  }
   /* Float the link section to the right */
   .header-right {
 	float: right;
@@ -76,11 +82,14 @@
 
 /* Colors */
 /* Colors from from https://www.w3schools.com/colors/colors_picker.asp */
-#pro {
-	color: #ffff66;
+#plus {
+	color: #002fff;
 }
-#green {
-	color: #66ff66;
+#purple {
+    color:#cc00ff;
+}
+#blue {
+	color: #002fff;
 }
 #red {
 	color: #ff2222
@@ -95,8 +104,8 @@
 }
 
 body {
-	background-color: #3d3d3d;
-	color: #fff;
+	background-color: #ffffff;
+	color: #000000;
 }
 
 /* responsive grid stolen from https://codepen.io/julesforrest/pen/QBzaQR */
@@ -162,12 +171,12 @@ body {
 }
 
 .a-profile {
-	color: #66ff66;
+	color: #cc00ff;
 	text-decoration: none;
 	transition: color 0.5s ease;
 }
 
 .a-profile:hover {
-	color: #47bd47;
+	color: #a901d3;
 	text-decoration: underline;
 }

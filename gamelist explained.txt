@@ -1,0 +1,27 @@
+Example
+        "game-image-url": "pro/assets/skibidi.jpg",
+        "game-title": "September 11th Simualtor",
+        "requires-subscription": ["Pro","Plus","Premium", "Unblock"],
+        "game-system": "Website Gaming Language",
+        "game-files-loc": "play/september-11-sim.html",
+        "game-callout": "september-12-sim",
+        "added": "4/24/2024",
+        "emulator": false,
+        "game-folder": 1
+
+game-image-url: The backdrop image of the game for the card
+game-title: The title of the game
+requires-subscription: If your 'usersubsc' is equal to any of the listed subscriptions, you may access the game. Else, redirect to pro/upgrade.html
+game-system: The console/system/emulator/language that the game runs on (SNES, Flash/Ruffle, N64, WebGL, etc.)
+game-files-loc: The location of the files for the game that make the game work
+game-callout: The callout of the game if it were to be called as game.html?game=september-12-sim, works same as game-files-loc
+added: The date the game was added
+emulator: True or False. Is game an EmulatorJS game?
+game-folder: The folder (.zip) where the game is found (which .zip to downlad from OneDrive to find game)
+
+
+How it works
+------------
+on click, it adds ?game-callout=september-12-sim to the URL. On page arrival, checks JSON for game-callout: september-12-sim and gets the image, title, device, added date, and makes sure that it is available for this version. If not available, redir to pro/upgrade.html
+
+rizz

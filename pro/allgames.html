@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games - Xprt Games | Pro Edition</title>
+    <link rel="stylesheet" href="stylesheet.css"> <!-- This is here for development only, will not work in the actual thing-->
+    <link rel="stylesheet" href="pro/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Begin Header-->
+    <div class="header">
+        <a href="index.html" class="logo"><span class="jersey25">Xprt Games</span> <span id="pro" class="jersey25">Pro</span></a>
+        <div class="header-right">
+          <a href="pro/index.html">Home</a>
+          <a class="active" href="pro/allgames.html">All Games</a>
+          <a href="pro/profile.html">Your Profile</a>
+        </div>
+    </div>
+
+
+      <!-- Begin Site-->
+      <div class="inter"><!-- the standard div class "site-content" cannot be used for some reason, fix pls-->
+        <h1>Browse Games</h1>
+        <p>Jump to category: <a href="#new" class="a-profile">New Games</a> | <a href="#allaz" class="a-profile">All (A-Z)</a> | <a href="#emg" class="a-profile">Emulator Games</a></p>
+        <h2 id="new">New Games</h2>
+        <div class="container-cds">
+          <div class="card">
+            <a href="play/skibidi.html" class="unstyle">
+              <img class="card-img" src="assets/skibidi.jpg" />
+              <h3 class="card-h3">Kai Cenat Fanum Tax</h3>
+              <p class="card-p">Included with Subscription<br>WebGL</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="play/skibidi.html" class="unstyle">
+              <img class="card-img" src="assets/skibidi.jpg" />
+              <h3 class="card-h3">Skibidi Rizzler 69</h3>
+              <p class="card-p"><i class="fa fa-lock" style="font-size:16px;color:white;"></i> Not Included with Subscription<br>NES - Emulator</p>
+            </a>
+        </div>
+      </div>
+        <h2 id="allaz">All Games (A-Z)</h2>
+        <!-- What to do:
+        Make it so that it calls to ./gamelist.json, where it will then take all the JSON classes n shit and turn them into cards
+        -->
+        <div class="container-cds">
+          <div class="card">
+            <a href="play/skibidi.html" class="unstyle">
+              <img class="card-img" src="assets/skibidi.jpg" />
+              <h3 class="card-h3">Kai Cenat Fanum Tax</h3>
+              <p class="card-p">Included with Subscription<br>WebGL</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="play/skibidi.html" class="unstyle">
+              <img class="card-img" src="assets/skibidi.jpg" />
+              <h3 class="card-h3">Skibidi Rizzler 69</h3>
+              <p class="card-p"><i class="fa fa-lock" style="font-size:16px;color:white;"></i> Not Included with Subscription<br>NES - Emulator</p>
+            </a>
+        </div>
+      </div>
+        <h2 id="emg">Emulator Games</h2>
+        <div class="container-cds">
+          <div class="card">
+            <a href="play/skibidi.html" class="unstyle">
+              <img class="card-img" src="assets/skibidi.jpg" />
+              <h3 class="card-h3">Kai Cenat Fanum Tax</h3>
+              <p class="card-p">Included with Subscription<br>WebGL</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="play/skibidi.html" class="unstyle">
+              <img class="card-img" src="assets/skibidi.jpg" />
+              <h3 class="card-h3">Skibidi Rizzler 69</h3>
+              <p class="card-p"><i class="fa fa-lock" style="font-size:16px;color:white;"></i> Not Included with Subscription<br>NES - Emulator</p>
+            </a>
+        </div>
+      </div>
+
+</body>
+</html>

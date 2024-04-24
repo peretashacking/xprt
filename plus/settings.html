@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <span id="untest2"></span>
+    <link rel="stylesheet" href="stylesheet.css"> <!-- This is here for development only, will not work in the actual thing-->
+    <link rel="stylesheet" href="plus/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Begin Header-->
+  <div class="header">
+    <a href="index.html" class="logo"><span class="jersey25">Xprt Games</span> <span id="plus" class="jersey25">Pro</span></a>
+    <div class="header-right">
+      <a href="plus/index.html">Home</a>
+      <a href="plus/browse.html">Browse Games</a>
+      <a class="active" href="plus/settings.html" style="text-decoration: none;">[settings icon here]</a>
+    </div>
+</div>
+
+
+      <!-- Begin Site-->
+      <div class="site-content">
+        <h1>Hello, <span id="username"></span></h1>
+        <h2><span id="plus">Plus</span> Subscriber | <span id="checkifuim"></span></h2>
+        <h3>My Benefits</h3>
+        <ul>
+          <li>Access to hundreds of ad-free games</li>
+          <li>Access to UIM <a href="#uim-info" class="a-profile">Learn More</a></li>
+          <li>Access to games that require an emulator to run</li>
+        </ul>
+        <h3>Notifications</h3>
+        <p><b>No notifications.</b></p>
+        <hr>
+        <h2>Some cool info</h2>
+        <h3>How to Update</h3>
+        <p>We announce new updates in the Peretas Discord Server. Please check there for new versions weekly so you can stay up to date on the latest unblocked games! Updating is as easy as changing the script you launch Xprt with. Video guides available in the Discord server.</p>
+        <h3>Change Account Settings</h3>
+        <p>Due to our extremely limited profile system, you will have to contact a Site Developer on Discord to change account information such as your name or your key.</p>
+        <h3>Notice to Account Holders</h3>
+        <p>Our developers work extremely hard on this site to bring you the best games that you can get during the school year. Because of this, it isn't cheap to maintain it. We don't ask for money because we're greedy, we ask for money so that we can help the community that brings you these games, especially when everything is getting blocked and you need that 1 million dollar idea to save you. So because of this, <b>nobody is allowed to share their key with anyone else other than the account holder,</b> and if caught doing so, <b>your subscription will be revoked and will not be refunded or reinstated.</b> You cannot appeal this. If you know or see someone doing this, report this in the Discord server immediately. If you have proof, we will upgrade your plan for free if the suspect is correctly convicted.</p>
+        <h3>Liability Notice</h3>
+        <p>You are liable for using this website and any actions caused while you use this website. We will not take the fall or the blame for you, and if you get in trouble, we cannot be chosen as the problem. We cannot get in trouble because all the blame is to you, the user, for using this program. This was made entirely outside of school and therefore does not break School Code of Conduct on our end. Please contact a Site Developer if you have more questions.</p>
+        <h3>Refunds</h3>
+        <p>We will refund 50% of your purchase, rounded down, if you have a valid cause of why you require a refund. Blacklisted causes include:
+          <ul>
+            <li>Getting in trouble with the school</li>
+            <li>Disliking the website</li>
+            <li>Website being laggy (fixable hardware errors)</li>
+            <li>Not using the website anymore</li>
+          </ul>
+          You may transfer your key to another person if you'd like for free. Please contact a Site Developer in the Discord if you have more questions. We know these rules are kinda dumb but read the Notice to Account Holders.
+        </p>
+        <h3 id="uim-info">Unblockable Injection Module (UIM)</h3>
+        <p>The trademarked Unblockable Injection Module (UIM) is a highly sophisticated client-sided design that makes it almost impossible to block on school computers, letting the user freely roam Xprt without any worry. Now, when we say Unblockable, we mean Un-BLOCK-able, as in they cannot restrict your access to this website. However, teachers may still be able to see this window open via <b>illegal spyware tools such as GoGuardian</b>, which is literally the stupidest extension to exist, the least privacy-focused extension ever on the world, back to the topic. We cannot guarantee that this website won't get blocked, since there still <i>are some ways</i> to block Xprt, but they are not ideal. And if Xprt gets blocked, we'll come right back with a new injection method. DM a moderator on our Discord for more information.</p>
+        <h2 id="game-malfunction-support">This Game Doesn't Work For Me!</h2>
+        <p>If a game does not work for you, either it says it's blocked, the connection reset, the emulator fails to launch, or the Bare server does not connect, please <u>immediately</u> report this to the Site Developers on the Peretas Discord Server so that we can get it fixed. We work tirelessly to get this website 100% working for all of you, and if something doesn't work, we won't take it lightly. We'll have it fixed within 7 business days. If it still doesn't work, contact us and we'll try to find out the problem. If it only doesn't work for just you and works for other people, please take your Chromebook and smash it on the ground.</p>
+        <h3>Nothing Appears on Game Page</h3>
+        <p>If nothing appears on the game page repeatedly, that means the website is failing to grab the game from the Game List. Possible reasons include the game being deleted. Another possible reason could be that you forgot to turn your WiFi on. Check that. If it still doesn't work, contact a Site Developer on Discord.</p>
+        <h3>Account Mangement</h3>
+        <p>Please manage your account on the Peretas website on a <b>private</b> device (your home computer, your cell phone, etc.). Do <b>NOT</b> use your school computer to manage your account.</b></p>
+      
+      
+      </div>
+<!-- Footer -->
+<hr>
+<div class="open-sans">Xprt Games &copy; 2024 Peretas Hacking Group. Unblockable Injection Module &copy; 2024 Peretas Hacking Group, The Xprt Games Team, and IntelTechs. Peretas Terms and Conditions, Liability Notice, and other legal forms apply here.</div>
+<script>
+  var username = prompt("For beta, in prod this will check with Cryptolens API --Please enter your username:");
+document.getElementById("username").innerHTML = username;
+document.getElementById("untest2").innerHTML = "<title>" + username + "'s Profile - Xprt Games | Pro Edition</title>";
+
+if (window.location.url = "about:blank") {
+document.getElementById("checkifuim").innerHTML = "<span id='green'>UIM Active</span>"
+}
+if (window.location.url == "about:blank")  {
+document.getElementById("checkifuim").innerHTML = "<span id='red'>UIM Inactive</span>"
+};
+</script>
+<script src="scripting.js"></script>
+</body>
+</html>
