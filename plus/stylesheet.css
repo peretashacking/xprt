@@ -1,7 +1,7 @@
 /* Stolen from https://www.w3schools.com/howto/howto_css_responsive_header.asp like a sigma */
 .header {
 	overflow: hidden;
-	background-color: #dbdbdb;
+	background-color: #1f1f1f;
 	padding: 20px 10px;
 	border-radius: 25px;
   }
@@ -9,7 +9,7 @@
   /* Style the header links */
   .header a {
 	float: left;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	text-align: center;
 	padding: 12px;
 	text-decoration: none;
@@ -31,7 +31,7 @@
   
   /* Change the background color on mouse-over */
   .header a:hover {
-	background-color: rgba(76, 0, 92, 0.2);
+	background-color: rgba(77, 0, 92, 0.753);
     color: white;
     text-decoration: underline;
   }
@@ -104,8 +104,8 @@
 }
 
 body {
-	background-color: #ffffff;
-	color: #000000;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 /* responsive grid stolen from https://codepen.io/julesforrest/pen/QBzaQR */
