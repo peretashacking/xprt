@@ -1,4 +1,4 @@
-const userSubscription = 'Plus';
+const userSubscription = 'Basic';
 // Make an asynchronous request to gamelist.json
 fetch('/gamelist.json')
 .then(response => response.json()) // Parse JSON response

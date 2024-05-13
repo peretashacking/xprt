@@ -27,12 +27,12 @@
         "popular": false
     },
     {
-        "game-image-url": "/assets/skibidi.jpg",
-        "game-title": "TikTok DEEDS UNBLOCKED",
-        "requires-subscription": ["Ultimate", "Unblock"],
-        "game-system": "Bite dance user information logging system",
-        "game-callout": "tiktok-sex",
-        "game-files-loc": "play/tiktok-sex",
+        "game-image-url": "/assets/xprtcraft.png",
+        "game-title": "XprtCraft",
+        "requires-subscription": ["Basic", "Ultimate", "Unblock"],
+        "game-system": "",
+        "game-callout": "Minecraft",
+        "game-files-loc": "play/xprtcraft.html",
         "added": "05/13/2024",
         "emulator": false,
         "game-folder": 1,
