@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games - Xprt Games | Basic Edition</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Begin Header-->
+  <div class="header">
+    <a href="index.html" class="logo"><span class="jersey25">Xprt Games</span> <span id="basic" class="jersey25">Basic</span></a>
+    <div class="header-right">
+      <a href="index.html">Home</a>
+      <a class="active" href="browse.html">Browse Games</a>
+      <a href="settings.html" style="text-decoration: none;margin-right:8px;"><i class="fa fa-cog" aria-hidden="true"style="font-size:24px;"></i></a>
+    </div>
+</div>
+
+
+      <!-- Begin Site-->
+      <div class="inter"><!-- the standard div class "site-content" cannot be used for some reason, fix pls-->
+        <h1>Browse Games</h1>
+    <p>Jump to category: <a href="#popular" class="a-profile">Popular Games</a> | <a href="#emg" class="a-profile">Emulator Games</a> | <a href="#new" class="a-profile">New Games</a> | <a href="#allaz" class="a-profile">All Games</a></p>
+    <p>To search, click Ctrl + F and type in the game you want to play.</p>
+
+    <h2 id="popular">Popular Games</h2>
+    <div class="container-cds" id="popular-games">
+        <!-- Popular games will be dynamically added here -->
+    </div>
+
+    <h2 id="emg">Emulator Games</h2>
+    <div class="container-cds" id="emulator-games">
+        <!-- Emulator games will be dynamically added here -->
+    </div>
+
+    <h2 id="new">New Games</h2>
+    <div class="container-cds" id="new-games">
+        <!-- New games will be dynamically added here -->
+    </div>
+
+    <h2 id="allaz">All Games (A-Z)</h2>
+    <div class="container-cds" id="all-games">
+        <!-- All games will be dynamically added here -->
+    </div>
+</div>
+<script src="browsegames.js"></script>
+</body>
+</html>
