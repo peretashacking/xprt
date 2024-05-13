@@ -1,5 +1,5 @@
 // Simulating user's subscription level
-const userSubscription = 'Plus'; // Replace this with actual user subscription level
+const userSubscription = 'Basic'; // Replace this with actual user subscription level
     
 // Make an asynchronous request to gamelist.json
 fetch('/gamelist.json') // Updated path to gamelist.json

@@ -75,14 +75,11 @@
 
 /* Colors */
 /* Colors from from https://www.w3schools.com/colors/colors_picker.asp */
-#plus {
-	color: #002fff;
+#basic {
+	color: #ffff66;
 }
-#purple {
-    color:#cc00ff;
-}
-#blue {
-	color: #002fff;
+#green {
+	color: #66ff66;
 }
 #red {
 	color: #ff2222
