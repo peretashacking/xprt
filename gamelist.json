@@ -4,29 +4,6 @@
         "hide-inelgible-games": false
     },
     {
-        "game-image-url": "/assets/skibidi.jpg",
-        "game-title": "September 11th Simualtor",
-        "requires-subscription": ["Basic","Ultimate", "Unblock"],
-        "game-system": "Website Gaming Language",
-        "game-files-loc": "play/september-11-sim.html",
-        "added": "04/24/2024",
-        "emulator": false,
-        "game-folder": 1,
-        "popular": true
-    },
-    {
-        "game-image-url": "/assets/skibidi.jpg",
-        "game-title": "September 12th Simualtor",
-        "requires-subscription": ["Ultimate", "Unblock"],
-        "game-system": "Super nintendo enteraaining systemers",
-        "game-callout": "september-12-sim",
-        "game-files-loc": "play/september-12-sim.html",
-        "added": "04/24/2024",
-        "emulator": true,
-        "game-folder": 1,
-        "popular": false
-    },
-    {
         "game-image-url": "/assets/xprtcraft.png",
         "game-title": "XprtCraft",
         "requires-subscription": ["Basic", "Ultimate", "Unblock"],
