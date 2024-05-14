@@ -4,7 +4,7 @@
         "hide-inelgible-games": false
     },
     {
-        "game-image-url": "/assets/xprtcraft.png",
+        "game-image-url": "assets/xprtcraft.png",
         "game-title": "XprtCraft",
         "requires-subscription": ["Basic", "Ultimate", "Unblock"],
         "game-system": "",

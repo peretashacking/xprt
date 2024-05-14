@@ -1,6 +1,6 @@
 const userSubscription = 'Basic';
 // Make an asynchronous request to gamelist.json
-fetch('/gamelist.json')
+fetch('gamelist.json')
 .then(response => response.json()) // Parse JSON response
 .then(data => {
     // Loop through each game object in the JSON data

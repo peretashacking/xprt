@@ -10,7 +10,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             var validUser = users.find(user => user.username === username && user.password === password);
 
             if (validUser) {
-                window.location.href = '/basic/index.html';
+                window.location.href = 'basic/index.html';
             } else {
                 alert('Invalid credentials');
             }
