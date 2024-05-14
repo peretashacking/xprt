@@ -11,9 +11,14 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
             if (validUser) {
                 window.location.href = 'basic/index.html';
+                addCookie()
             } else {
                 alert('Invalid credentials');
             }
         })
         .catch(error => console.error('Error:', error));
 });
+
+function addCookie() {
+
+}
