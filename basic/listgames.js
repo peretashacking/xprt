@@ -17,6 +17,18 @@ const jsonData = [
         "emulator": false,
         "game-folder": 1,
         "popular": true
+    },
+    {
+        "game-image-url": "assets/skibidi.jng",
+        "game-title": "v1.0.3",
+        "requires-subscription": ["Ultimate", "Unblock"],
+        "game-system": "",
+        "game-callout": "upgrade",
+        "game-files-loc": "upgrade.html",
+        "added": "05/14/2024",
+        "emulator": false,
+        "game-folder": 1,
+        "popular": true
     }
 ];
 
