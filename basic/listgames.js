@@ -19,7 +19,7 @@ const jsonData = [
         "popular": true
     },
     {
-        "game-image-url": "assets/skibidi.jng",
+        "game-image-url": "assets/skibidi.jpg",
         "game-title": "v1.0.3",
         "requires-subscription": ["Ultimate", "Unblock"],
         "game-system": "",

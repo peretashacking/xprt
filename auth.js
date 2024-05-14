@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
-    fetch('auth.json')
+    fetch('http://127.0.0.1:5500/auth.json')
         .then(response => response.json())
         .then(users => {
             var validUser = users.find(user => user.username === username && user.password === password);
