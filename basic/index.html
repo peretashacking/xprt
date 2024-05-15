@@ -11,6 +11,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div id="overlay">
+    <div id="loginPopup">
+        <button id="closeButton">X</button>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
   <!-- Begin Header-->
     <div class="header">
         <a href="index.html" class="logo"><span class="jersey25">Xprt Games</span> <span id="basic" class="jersey25">Basic</span></a>
@@ -49,7 +61,7 @@
   
     <script src="listgames.js"></script>
     <script src="authcheck.js"></script>
-    
+    <script src="/checkauth.js"></script>
     
     
     

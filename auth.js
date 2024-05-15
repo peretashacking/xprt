@@ -10,8 +10,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             var validUser = users.find(user => user.username === username && user.password === password);
 
             if (validUser) {
+                addCookie(username, password);
                 window.location.href = 'basic/index.html';
-                addCookie()
             } else {
                 alert('Invalid credentials');
             }
@@ -19,6 +19,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         .catch(error => console.error('Error:', error));
 });
 
-function addCookie() {
-
+function addCookie(username, password) {
+    var date = new Date();
+    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000)); // Cookie expires in 7 days
+    var expires = "expires=" + date.toUTCString();
+    document.cookie = "username=" + username + ";" + expires + ";path=/";
+    document.cookie = "password=" + password + ";" + expires + ";path=/";
 }
