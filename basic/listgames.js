@@ -7,12 +7,12 @@ const jsonData = [
         "hide-inelgible-games": false
     },
     {
-        "game-image-url": "assets/xprtcraft.png",
-        "game-title": "XprtCraft",
+        "game-image-url": "assets/mc-banner.png",
+        "game-title": "Minecraft",
         "requires-subscription": ["Basic", "Ultimate", "Unblock"],
         "game-system": "",
         "game-callout": "Minecraft",
-        "game-files-loc": "play/xprtcraft.html",
+        "game-files-loc": "play/minecraft.html",
         "added": "05/13/2024",
         "emulator": false,
         "game-folder": 1,
