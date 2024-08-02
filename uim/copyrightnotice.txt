@@ -1,0 +1,11 @@
+WARNING
+
+UIM (Unblockable Injection Method) is protected under copyright!
+
+Please do not use this code in your commercial projects!
+
+This may only be used for personal/private projects, or to expand on.
+
+Open a pull request to enhance UIM.
+
+UIM is NOT finished.
